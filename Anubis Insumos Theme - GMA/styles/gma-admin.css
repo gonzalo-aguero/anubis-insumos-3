@@ -1,0 +1,109 @@
+.has-black-color{
+    display: none;
+}
+#GMA-Admin-Content{
+    width: 100%;
+    font-size: 10px;
+}
+#primaryNavigation{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    background-color: var(--lightGreyBorder, grey);
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+#primaryNavigation li a{
+    color: #393939;
+    text-decoration: none;
+    background-color: var(--lightGreyBorder, grey);
+    padding: .75em;
+    display: inline-block;
+    position: relative;
+    font-size: 1.75em;
+}
+#primaryNavigation li a::after{
+    display: none;
+    position:absolute;
+    content: "";
+    background-color: rgba(0,0,0,0.15);
+    width:100%;
+    height: 100%;
+    left:0;
+    top:0;
+}
+#primaryNavigation li a:hover::after,
+#primaryNavigation li a:active::after{
+    display: inline-block;
+}
+#GMA-Admin-Content > h1{
+    text-align: center;
+    font-weight: 500;
+    font-size: 4em;
+    margin-bottom: .5em;
+}
+#GMA-Admin-Content > h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.25em;
+    margin-bottom: .5em;
+}
+.explanationImages > div{
+    border: 1px var(--lightGreyBorder,grey) solid;
+    margin-bottom: 5em;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+.explanationImages > div > h3{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.25em;
+    margin-bottom: .5em;
+}
+.gma-actionMessage{
+    font-size: 2em;
+    text-align:center;
+}
+.gma-actionMessage.success{
+    background-color: #84f693;
+    color: #168921;
+    border: 1px #168921 solid;
+}
+.gma-actionMessage.error{
+    background-color: #ff8484;
+    color: #9f1a1a;
+    border: 1px #9f1a1a solid;
+}
+
+#GMA-Admin-Content > table{
+    font-size: 1.35em;
+}
+#GMA-Admin-Content > .actionBar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.35em; 
+}
+@media screen and (max-width: 580px){
+    #GMA-Admin-Content{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 480px){
+    #GMA-Admin-Content{
+        font-size: 7px;
+    }
+}
+@media screen and (max-width: 410px){
+    #GMA-Admin-Content{
+        font-size: 6px;
+    }
+    #GMA-Admin-Content > table{
+        /* width: 100% !important; */
+        /* max-width: 100%; */
+        min-width: 100%;
+        overflow: auto;
+        /* display: block; */
+    }
+}

@@ -1,0 +1,172 @@
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/globalValues.css?v=5");
+/* ### GENERAL STYLES ### */
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/header.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/body.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/footer.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/freeShippings.css?v=5");
+/* ### END GENERAL STYLES ### */
+
+/* ### SPECIAL STYLES ### */
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/products.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/productDetail.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/miniCart.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/checkout.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/thankyouPage.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/FAQ.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/animate.css?v=5");
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/styles/gma-admin.css?v=5");
+/* ### END SPECIAL STYLES ### */
+
+/* ### LIBRARIES STYLES ### */
+@import url("https://anubisinsumos.com/wp-content/themes/Anubis Insumos Theme - GMA/libraries/Icons/style.css?v=5");
+/* ### END LIBRARIES STYLES ### */
+*::-webkit-scrollbar {
+    background-color: var(--AnubisColorPalette5);
+    height: 0.25em;
+    width: 0.5em;
+}
+*::-webkit-scrollbar-thumb{
+    background:  rgba(0,0,0,0.2);
+    background-color: var(--AnubisColorPalette9);
+    height: 0.25em;
+    cursor: pointer;
+}
+*::-webkit-scrollbar-thumb:hover{
+    background:  rgba(0,0,0,0.5);   
+}
+*{
+    scroll-behavior: smooth;
+    outline: none !important;
+}
+/* =============================================== */
+#transparentDarkBackground{
+    display: none;
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:1000;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+#transparentDarkBackground > .closeSpan{
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.45);
+    z-index: 1;
+}
+/* =============================================== */
+/* SCROLL X CONTROLS */
+.GMA.scrollXControl{
+    position: absolute;
+    font-size: 2.5em;
+    opacity: 0.65;    
+    transition: 0.1s;
+    z-index: 1;
+    cursor: pointer;
+    font-family: monospace !important;
+    color: var(--AnubisColorPalette11);
+    transform: scale(0.75,1);
+    user-select: none;
+}
+.GMA.scrollXControl:hover{
+    opacity: 1;    
+    transition: 0.1s;   
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+}
+.GMA.scrollXControl.Left{
+    align-self: center;
+    left: 0;
+}
+.GMA.scrollXControl.Right{
+    align-self: center;   
+    right: 0;
+}
+.productSlider .GMA.scrollXControl{
+    font-size: 5.5em;
+}
+/* END SCROLL X CONTROLS */
+/* =============================================== */
+/* SEARCH FORM */
+.GMA.searchForm{
+    position: relative;
+    z-index:2;
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 15px;
+    --border-radius: 0.75em;
+    border-radius: var(--border-radius);
+    box-shadow: 0px 10px 13px -7px #000000, 24px 5px 15px 5px rgb(0 0 0 / 0%);
+}
+.GMA.searchForm input[type="search"]{
+    padding: 0.75em;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    outline: none;
+}
+.GMA.searchForm input[type="submit"]{
+    background: #ad925c;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    color: white;
+    font-weight: bold;
+    outline: none;
+}
+/* END SEARCH FORM */
+/* =============================================== */
+#post-5{
+    display: none;
+}
+.sectionTitle{
+    text-align: center;
+    color: var(--AnubisColorPalette10);
+    font-weight: 600;
+}
+.sliderTitle{
+    color: var(--AnubisColorPalette9);
+    text-align: center;
+    font-weight: 600;
+}
+/* =============================================== */
+/* COVERPAGE SLIDER */
+.GMA.coverPageSlider{
+    margin-bottom: 2em;
+}
+.GMA.coverPageSlider div#n2-ss-4-arrow-previous,
+.GMA.coverPageSlider div#n2-ss-4-arrow-next{
+    margin: 0;
+}
+.GMA.coverPageSlider .n2-ss-widget.n2-ow-all.nextend-arrow-animated-fade{    
+    display: none  !important;
+    background: white;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    border-radius: 0.15em;
+}
+.GMA.coverPageSlider .n2-ss-widget.n2-ow-all.nextend-arrow-animated-fade:hover{
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+.GMA.coverPageSlider:hover .n2-ss-widget.n2-ow-all.nextend-arrow-animated-fade{
+    display: block !important;
+}
+/* END COVERPAGE SLIDER */
+/* =============================================== */
+/* GOOGLE REVIEWS */
+.ti-review-item.source-Google{
+    padding: 0.65em !important;
+}
+.ti-rating-text *{
+    color: var(--AnubisColorPalette12) !important;
+}
+/* END GOOGLE REVIEWS */
+/* WhatsApp Button */
+.joinchat{
+    z-index: 900 !important;
+}

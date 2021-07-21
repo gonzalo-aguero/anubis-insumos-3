@@ -1,0 +1,135 @@
+#topBar{
+    position: relative;
+    background: var(--AnubisColorPalette8);
+    color: #ffffff;
+    font-weight: 900;
+    text-align:center;
+    padding: 5px;
+    z-index: 2;
+}
+#topBar a{
+    background: var(--niceGreen1);
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 600;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    transition: 0.1s;
+    cursor:pointer;
+    display: inline-block;
+}
+#topBar a:hover,
+#topBar a:active{
+    opacity: 85%;
+    transition: 0.1s;
+}
+div#closeFreeShippings{
+    display:none;
+    position: fixed;
+    background: rgba(0,0,0,0.45);
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 1001;
+    cursor:pointer;
+}
+#freeShippings{
+    /* When Javascript starts this changes to: "opacity: 100%" and "screen: none". */
+    display: block;
+    opacity: 0; 
+    
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    max-height: 80%;
+    background: white;
+    z-index: 1002;
+    -webkit-box-shadow: 0px 5px 20px -5px rgb(0 0 0 / 75%);
+    -moz-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 20px -5px rgb(0 0 0 / 75%);
+    font-size: 10px;
+    overflow-y: auto;
+}
+#freeShippings > span.closeSpan{
+    position: fixed;
+    right: 7%;
+    font-size: 4em;
+    cursor:pointer;
+    line-height: normal;
+}
+#freeShippings > span.closeSpan:hover,
+#freeShippings > span.closeSpan:active{
+    transform: scale(1.05,1.05);
+}
+#freeShippings > h2{
+    text-align: center;
+    font-size: 4em;
+    font-family: aBigDeal;
+    color: var(--AnubisColorPalette9);
+    padding-top: 0.5em;
+}
+#freeShippings > div > h3{
+    text-align: center;
+    font-size: 2em;
+    font-family: aBigDeal;
+    color: var(--AnubisColorPalette8);
+}
+#freeShippings .minAmountWithFreeShipping .price{
+    color: var(--niceGreen1);
+    font-size: 4em;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+    margin-top: .3em;
+    margin-bottom: .5em;
+}
+.freeShippingNotification{
+    text-align: center;
+    font-size: 1.2em;
+    background-color: var(--niceGreen1);
+    color: white;
+    padding: .25em;
+}
+@media screen and (max-width: 550px){
+    #topBar{
+        padding: 3px;
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 450px){
+    #topBar{
+        font-size: 11px;
+    }
+    #freeShippings{
+        font-size: 8px;
+        top: 5%;
+        left: 2.5%;
+        width: 95%;
+        min-height: 90%;
+        max-height: 90%;
+    }
+}
+@media screen and (max-width: 380px){
+    #topBar{
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 340px){
+    #topBar{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 300px){
+    #freeShippings{
+        font-size: 6px;
+    }
+}
+@media screen and (max-width: 280px){
+    #topBar{
+        font-size: 7px;
+    }
+}

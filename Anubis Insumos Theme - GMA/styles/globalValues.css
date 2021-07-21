@@ -1,0 +1,31 @@
+:root{
+    /* ------ GLOBAL VARIABLES ------ */
+    --AnubisColor1: #ad925c;
+    --AnubisColor2: #dcc494;
+    --AnubisColor3: #e9c57d;
+    --lightGreyBorder: #dddddd;
+    --niceGreen1: #58cf39;
+    --niceGreen2: #00ff73;
+    
+    --AnubisColorPalette1: #f5f1eb;
+    --AnubisColorPalette2: #eae4d6;
+    --AnubisColorPalette3: #e0d6c2;
+    --AnubisColorPalette4: #d6c9ad;
+    --AnubisColorPalette5: #ccbb99;
+    --AnubisColorPalette6: #c2ad85;
+    --AnubisColorPalette7: #b7a070;
+    --AnubisColorPalette8: #ad925C;
+    --AnubisColorPalette9: #978051;
+    --AnubisColorPalette10: #826e45;
+    --AnubisColorPalette11: #6c5b39;
+    --AnubisColorPalette12: #56492e;
+    --AnubisColorPalette13: #413722;
+    --AnubisColorPalette14: #2b2517;
+    --AnubisColorPalette15: #16120b;
+}
+@font-face {
+  font-family: aBigDeal;
+  src: url("../libraries/font/aBigDeal.ttf");
+  font-weight: 900;
+  font-style: normal;
+}

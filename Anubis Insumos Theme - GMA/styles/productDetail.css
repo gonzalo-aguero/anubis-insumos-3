@@ -1,0 +1,171 @@
+.GMA.productDetail{
+    display: none;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 1003;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.single-product {
+    width: 100%;
+}
+.GMA.productDetail span.onsale{
+    display:block;   
+    opacity: 85%;
+}
+.GMA.productDetail > div.woocommerce{
+    font-size: 1.5em;
+    background: #f7f7f7;
+    width: 90%;
+    height: 80%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.75);
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+}
+.GMA.productDetail > div.woocommerce .closeSpan{
+    position: fixed;
+    top: 13%;
+    right: 7%;
+    cursor: pointer;
+    font-size: 3em;
+    z-index: 1;
+    line-height: 0;
+}
+.GMA.productDetail > div.woocommerce .closeSpan:hover,
+.GMA.productDetail > div.woocommerce .closeSpan:active{
+    transform: scale(1.05,1.05);
+}
+/* Product title */
+.GMA.productDetail > div.woocommerce .product_title{
+    font-size: 2em;
+    display: block;
+    color: var(--AnubisColorPalette13);
+    text-align: left;
+}
+/* #region Product Images */
+/* <div> */
+.GMA.productGallerySlider{
+    --size: 20em;
+    --size: 100%;
+    width: var(--size);
+    margin: 0 !important;
+    display: flex;
+}
+/* Scroll X Controls */
+.GMA.productDetail .GMA.scrollXControl{
+    font-size: 3.4em;
+}
+/* <figure> */
+.GMA.productGallerySlider > figure{
+    display: flex;
+    overflow-x: auto;
+}
+/* <div> */
+.GMA.productGallerySlider > figure > div{
+    min-width: var(--size) !important;
+    max-width: var(--size)  !important;
+    width: var(--size);
+    height: var(--size);
+}
+.GMA.productGallerySlider >figure > div img{
+    width: var(--size);
+}
+/* #endregion Product Images */
+/* SKU, Categories and Tags */
+.GMA.productDetail > div.woocommerce .product_meta{
+    display: none;
+}
+.button.single_add_to_cart_button{
+    background-color: var(--AnubisColorPalette8) !important;
+}
+.button.single_add_to_cart_button:hover{
+    background-color: var(--AnubisColorPalette9)  !important;
+}
+/* ADDED TO CART BUTTON  */
+.GMA.productDetail a.added_to_cart{
+    margin-left: 1em;
+    border: 1px var(--AnubisColorPalette8) solid;
+    background: none;
+    color: var(--AnubisColorPalette9);
+}
+.GMA.productDetail a.added_to_cart::after{
+    display: none;
+}
+/* #region tabs */
+.GMA.productDetail .entry-content{
+    display: block;
+}
+/* #endregion tabs */
+.GMA.productDetail > .closeSpan{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index: -1;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px){
+    /* Product title */
+    .GMA.productDetail > div.woocommerce .product_title{
+        margin:0;
+    }
+    .GMA.productGallerySlider{
+        --size: 100%;
+    }
+    .woocommerce-product-gallery{
+        margin: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+    .woocommerce-product-gallery__image{
+        display: flex;
+        justify-content: center; 
+    }
+
+    .GMA.productDetail .summary.entry-summary{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .GMA.productDetail table.variations{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .GMA.productDetail table.variations td{
+        text-align: center;
+    }
+    .GMA.productDetail form.variations_form.cart {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 700px){
+    .GMA.productDetail > div.woocommerce{
+/*         border-radius: 0.75em; */
+    }
+}
+@media screen and (max-width: 440px){
+    /* ADDED TO CART BUTTON  */
+    .GMA.productDetail a.added_to_cart{
+        margin-top: 1em;
+    }
+}
+@media screen and (max-width: 400px){
+    /* Product title */
+    .GMA.productDetail > div.woocommerce .product_title{
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,76 @@
+.GMA.ThankYou{
+    text-align: center;
+    margin-top: 2em;
+    border: 1px var(--niceGreen1) solid;
+    border: 1px var(--AnubisColorPalette4) solid;
+    border-radius:  1em;
+    padding: 2em;
+}
+.GMA.ThankYou > h1{
+    font-weight: 600;
+    font-size: 2.6em;
+    --animate-duration: 1s;
+}
+.GMA.ThankYou > .icon-checkmark{
+    color: var(--niceGreen1);
+    font-size: 5em;
+}
+#afterThankYouNavigation{
+    margin: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+section.GMA.orderDetail{
+    display: none;
+    /* text-align: center; */
+}
+
+.woocommerce-order-details,
+.woocommerce-customer-details{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: #f8f8f8;
+}
+.woocommerce-customer-details > section{
+    background-color: #f8f8f8;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+@media screen and (max-width: 580px){
+    .GMA.ThankYou{
+        font-size: 0.7em;
+    }
+    #afterThankYouNavigation{
+        font-size: 0.9em;
+    }   
+}
+@media screen and (max-width: 520px){
+    .GMA.ThankYou{
+        font-size: 0.6em;
+    }
+    #afterThankYouNavigation{
+        font-size: 0.8em;
+    }   
+}
+@media screen and (max-width: 420px){
+    .GMA.ThankYou{
+        font-size: 0.5em;
+    }
+    #afterThankYouNavigation{
+        font-size: 0.7em;
+    }   
+}
+@media screen and (max-width: 380px){
+    .GMA.ThankYou{
+        font-size: 0.45em;
+    }
+    #afterThankYouNavigation{
+        justify-content: center;
+        gap: 0.5em;
+    }   
+}

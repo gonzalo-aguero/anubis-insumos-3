@@ -1,0 +1,213 @@
+#masthead{
+    --animate-delay: 0ms;
+    --animate-duration: 500ms;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    background: white;
+    font-size: 10px; /* (1em == 10px) */
+    padding: 1em;
+    margin:0;
+    transition: 0.25s;
+    border: 1px var(--AnubisColorPalette5) solid;
+}
+#masthead:hover,
+#masthead:active{
+    opacity: 100% !important;
+    transition: 0.25s;
+}
+#masthead *{
+    margin: 0;
+}
+/* Site identity and main navigation container */
+#masthead > div.mainHeader{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+/* SITE IDENTITY */
+#siteIdentity{
+    flex-basis: 100%;
+    font-size: 1em;
+}
+#siteIdentity > a{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: fit-content;
+    line-height: 0;
+}
+/* LOGO */
+#siteIdentity img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+}
+#siteIdentity h1{
+    font-size: 3em;
+    font-family: aBigDeal;
+    /* line-height: normal; */
+    /* margin: 0; */
+    height: min-content;
+    max-width: min-content;
+}
+#siteIdentity h1._0{
+    color: black;
+    margin-left: 0.2em;
+}
+#siteIdentity h1._1{
+    color: var(--AnubisColorPalette8);
+    margin-left: 0.3em;
+}
+/* END SITE IDENTITY */
+/* NAVIGATION */
+#mainNavContainer > .openMenuBtn,
+#mainNavContainer > .closeMenuBtn,
+#mainNavContainer > nav > .closeMenuBtn{
+    display: none;
+}
+#mainNavContainer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+#mainNavContainer > nav{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    list-style: none;
+}
+#mainNavContainer > nav > li{}
+#mainNavContainer > nav > li > a{
+    font-size: 2.3em;
+    color: var(--AnubisColorPalette8);
+    border: 0.135em var(--AnubisColorPalette8) dashed;
+    padding: 0.4em;
+    border-radius: 50%;
+    margin: 0.25em;
+    transition: 0.25s;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+}
+#mainNavContainer > nav > li:hover > a{
+    background: rgba(0,0,0,0.05);
+    transition: 0.25s;
+}
+#mainNavContainer > nav > li > a > span{
+    display: none;
+}
+#cartCount{
+    font-size: .65em;
+    display: flex !important;
+    position: absolute;
+    right: -0.35em;
+    top: -0.35em;
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 50%;
+    padding: .2em;
+    text-align:center;
+}
+/* END NAVIGATION */
+/* CATEGORY NAVIGATION */
+#categoryNavigation{
+    margin-top: 1em;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+#categoryNavigation > ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 1em;
+}
+#categoryNavigation > ul::-webkit-scrollbar{
+    display: none;
+}
+#categoryNavigation > ul > li{
+    min-width: max-content;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#categoryNavigation > ul > li > a{
+    color: black;   
+    color: var(--AnubisColorPalette9);     
+    font-size: 1.35em;
+    transition: 0.25s;
+    padding: 0.6em;
+}
+#categoryNavigation > ul > li > a:hover{
+    background: rgba(0,0,0,0.05);
+    transition: 0.25s;
+}
+/* END CATEGORY NAVIGATION */
+
+@media screen and (max-width: 700px){
+    /* SITE IDENTITY */
+    #siteIdentity{
+        font-size: .75em;
+    }
+    /* END SITE IDENTITY */
+    #mainNavContainer > nav{
+        font-size: 1em;
+    }
+    #mainNavContainer > nav > li > a{
+        border: none;
+        margin: 0.1em;
+    }
+    #categoryNavigation > ul > li > a{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 520px){
+    /* SITE IDENTITY */
+    #siteIdentity{
+        font-size: .6em;
+    }
+    /* END SITE IDENTITY */
+    #mainNavContainer > nav{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 420px){
+    /* SITE IDENTITY */
+    #siteIdentity{
+        font-size: .5em;
+    }
+    /* END SITE IDENTITY */
+    #mainNavContainer > nav{
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 360px){
+    /* SITE IDENTITY */
+    #siteIdentity{
+        font-size: .4em;
+    }
+    /* END SITE IDENTITY */
+    #mainNavContainer > nav{
+        font-size: .625em;
+    }
+}
+@media screen and (max-width: 300px){
+    /* SITE IDENTITY */
+    #siteIdentity{
+        font-size: .3em;
+    }
+    /* END SITE IDENTITY */
+    #mainNavContainer > nav{
+        font-size: .5em;
+    }
+}

@@ -1,0 +1,14 @@
+.arconix-faq-wrap{
+    color: var(--AnubisColorPalette9);
+    border-color: var(--AnubisColorPalette6) !important;
+    background-color: var(--AnubisColorPalette1) !important;
+}
+.arconix-faq-title{
+    color: var(--AnubisColorPalette10);
+    font-weight: 600;
+    font-size: 1.2em !important;
+}
+.entry-title{
+    color: var(--AnubisColorPalette8);
+    font-weight: 400;
+}
