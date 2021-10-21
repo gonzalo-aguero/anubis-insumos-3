@@ -73,7 +73,7 @@ function GMA_printProductsByCategory(){
                 // ------ PRINT PRODUCT ------ //
                 echo GMA_productTemplate($productId);
             }
-            ?></div><?
+            ?></div><?php
         }
     }
 }
